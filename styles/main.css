@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0;
+  padding-top: 0;
+
 }
 
 html {
@@ -19,19 +20,23 @@ header {
   top: 0;
   min-height: 8vh;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .logo {
-  color: #28352f;
-  font-weight: 600;
+  color: var(--nav-color);
   font-size: 2rem;
+  font-weight: 600;
   cursor: pointer;
   text-decoration: none;
+  margin-right: auto;
+  margin-left: 2.4rem;
 }
 
 .menu {
   cursor: pointer;
+  justify-content: flex-start;
+  padding-right: 4rem;
 }
 
 .portfolio {
@@ -41,16 +46,18 @@ header {
   padding-top: 3.5rem;
   color: #172b4d;
   background-image: url(../images/header-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
 }
 
 .portfolio__title {
-  font-size: 4rem;
+  font-size: 40px;
   font-weight: bold;
   padding: 1rem;
+  margin-top: 8rem;
 }
 
 .portfolio__title span {
@@ -61,13 +68,29 @@ header {
 .portfolio__description {
   font-size: 2rem;
   font-weight: 400;
+  padding: 1rem;
+  color: #344563;
 }
 
 .portfolio__icons {
   display: flex;
   width: 60vw;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   list-style: none;
+  margin-top: 1rem;
+  padding: 1rem;
+
+}
+
+.contact__title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 1rem;
+  color: #6070ff;
+
 }
 
 .portfolio__icons li {
