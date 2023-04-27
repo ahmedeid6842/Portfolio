@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding-top: 0;
-
 }
 
 html {
@@ -31,7 +30,7 @@ header {
   text-decoration: none;
   margin-right: auto;
   margin-left: 2.4rem;
-  padding: 1rem
+  padding: 1rem;
 }
 
 .menu {
@@ -80,20 +79,18 @@ header {
   list-style: none;
   margin-top: 1rem;
   padding: 1rem;
-
 }
 
 .contact__title {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   padding: 1rem;
   color: #6070ff;
-
 }
 
 .portfolio__icons li {
-  flex: 1;
+  display: flex;
+  padding-right: 4rem;
 }
