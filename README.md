@@ -58,6 +58,8 @@
 - **adding menu bar**
 - **adding links that refer to my profiles**
 - **adding background image from figma**
+- **adding my recent works cards**
+- **adding my languages, frameworks and skills**
 
 
 
@@ -117,7 +119,7 @@ To run the project, execute the following command: open index.html as normal fil
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[make the website more interative]**
-- [ ] **[adding samples of my work]**
+- [x] **[adding samples of my work]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
