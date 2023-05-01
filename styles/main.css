@@ -183,9 +183,9 @@ header {
 .card__list,
 .about__list {
   width: 100%;
-  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .card__canopy-list li::before {
@@ -247,6 +247,8 @@ header {
   background: #ebebff;
   border-radius: 4px;
   padding: 0.8rem 1.2rem;
+  float: left;
+  margin-right: 10px;
 }
 
 /* About section */
@@ -352,3 +354,4 @@ header {
   padding-bottom: 5vw;
   margin: 0;
 }
+
