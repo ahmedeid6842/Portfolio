@@ -186,6 +186,7 @@ header {
   justify-content: space-evenly;
   flex-wrap: wrap;
   overflow: hidden;
+  margin-left: 15px;
 }
 
 .card__canopy-list li::before {
