@@ -22,6 +22,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -60,7 +61,7 @@
 - **adding background image from figma**
 - **adding my recent works cards**
 - **adding my languages, frameworks and skills**
-
+- **adding a beautiful Contact Me form**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -139,6 +140,12 @@ Feel free to check the [issues page](../../issues/).
 If you like this project, please give it a star ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📖 Acknowledgements <a name="acknowledgements"></a>
+I would like to appreciate <a href="https://www.microverse.org/">Microverse</a> for providing the resources and the platform for us to be a Professional full-stack developer.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 📝 License <a name="license"></a>
 
