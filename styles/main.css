@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -241,7 +242,7 @@ header {
   height: 76px;
 }
 
-.card__list > li {
+.card__list>li {
   font-size: 1.2rem;
   font-weight: 600;
   color: #396df2;
@@ -255,6 +256,7 @@ header {
 /* About section */
 .about {
   padding: 1.2rem;
+  padding-left: 1rem;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -356,3 +358,105 @@ header {
   margin: 0;
 }
 
+/* Contact Form */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150vh;
+  background: url('../images/Contact_Form/shapes.svg') no-repeat, url('../images/Contact_Form/basic_background.svg') no-repeat;
+  background-size: 60%, cover;
+  margin-top: 22vh;
+  padding-top: 20vh;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10vh;
+  width: 90%;
+}
+
+.contact__form__title {
+  font-family: 'Poppins';
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.contact__form__desc {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+  width: 327px;
+  height: 137px;
+}
+
+.contact__name input,
+.contact__email input,
+.contact__message textarea {
+  padding-right: 30%;
+  box-sizing: border-box;
+  margin-top: 0vh;
+}
+
+
+
+.contact__name,
+.contact__email,
+.contact__message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact__name input,
+.contact__email input {
+  width: 100%;
+  height: 48px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid #CFD8DC;
+}
+
+.contact__message textarea {
+  width: 100%;
+  height: 150px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid #CFD8DC;
+}
+
+.contact {
+  background-position: right top 5vh, left top;
+}
+
+.contact__btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+  color: #396df2;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: 0.6s;
+
+  background-color: #fff;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  margin-left: 0px;
+}
