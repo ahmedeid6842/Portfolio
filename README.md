@@ -60,7 +60,7 @@
 - **adding background image from figma**
 - **adding my recent works cards**
 - **adding my languages, frameworks and skills**
-
+- **adding a beautiful Contact Me form**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
