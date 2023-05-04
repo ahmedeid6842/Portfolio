@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+
+a:visited {
+  color: #6070ff;
+  text-decoration: none;
+}
+
 li {
   list-style: none;
 }
@@ -221,7 +227,7 @@ header {
 .card__img {
   width: 100%;
   height: 100%;
-  padding-block: 5%;
+  padding-block: 10%;
 }
 
 .card__details {
@@ -325,7 +331,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 90%;
-    height: auto;
+    height: 100%;
     border: 1px solid #d0d9d4;
     border-radius: 4rem;
     margin: 2%;
@@ -338,19 +344,20 @@ header {
 
   .card__imgbox {
     height: 100%;
-    width: 40%;
+    width: 50%;
   }
 
   .card__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding-block: 2%;
+
   }
 
   .card__details {
     height: 100%;
     width: 50%;
-    /* add this line */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -523,13 +530,12 @@ header {
   .about {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    padding: 9rem;
   }
 
   .about_basics {
     width: 50%;
-    padding: 10rem;
-    padding-top: 1rem;
   }
 
   .about__title {
@@ -550,13 +556,12 @@ header {
   .language_list_technologies {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 5rem;
   }
 
   .drop__down {
     align-self: flex-end;
     margin-top: 0;
-    padding: 10rem;
     width: 50%;
     text-align: right;
   }
