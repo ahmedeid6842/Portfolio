@@ -35,6 +35,10 @@ header {
   justify-content: space-between;
 }
 
+.nav-list {
+  display: none;
+}
+
 .logo {
   color: #6070ff;
   font-size: 2rem;
@@ -50,6 +54,37 @@ header {
   cursor: pointer;
   justify-content: flex-start;
   padding-right: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  .nav-menu {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 7rem;
+  }
+
+  header {
+    justify-content: flex-start;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    margin-right: 15rem;
+    flex: 1;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    justify-content: center;
+  }
 }
 
 .portfolio {
@@ -102,6 +137,32 @@ header {
   display: flex;
   padding-right: 4rem;
 }
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    background-image: url(../images/desktop/Header\ bg.svg);
+    background-size: cover auto;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 7rem;
+
+  }
+
+  .portfolio__description {
+    width: 90rem;
+  }
+
+  .portfolio_paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15rem;
+    padding-top: 10rem;
+  }
+
+
+}
+
 
 .btn {
   font-size: 1.7rem;
@@ -242,7 +303,7 @@ header {
   height: 76px;
 }
 
-.card__list > li {
+.card__list>li {
   font-size: 1.2rem;
   font-weight: 600;
   color: #396df2;
@@ -251,6 +312,73 @@ header {
   padding: 0.8rem 1.2rem;
   float: left;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    border: 1px solid #d0d9d4;
+    border-radius: 0.8rem;
+    margin: 2%;
+    overflow: hidden;
+  }
+
+  .card__imgbox {
+    height: 220px;
+    width: 50%;
+    /* add this line */
+  }
+
+  .card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card__details {
+    height: 100%;
+    width: 50%;
+    /* add this line */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .card__text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-block-end: 0.5rem;
+  }
+
+  .card__description {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-block-end: 1rem;
+  }
+
+  .card__price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: right;
+    /* add this line */
+    margin-block-end: 1rem;
+  }
+
+  .card__btn {
+    align-self: flex-end;
+    /* add this line */
+  }
 }
 
 /* About section */
