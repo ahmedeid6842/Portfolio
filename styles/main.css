@@ -327,15 +327,18 @@ header {
     width: 90%;
     height: auto;
     border: 1px solid #d0d9d4;
-    border-radius: 0.8rem;
+    border-radius: 4rem;
     margin: 2%;
     overflow: hidden;
   }
 
+  .card:nth-child(2n){
+    flex-direction: row-reverse;
+  }
+
   .card__imgbox {
-    height: 220px;
-    width: 50%;
-    /* add this line */
+    height: 100%;
+    width: 40%;
   }
 
   .card__img {
@@ -350,34 +353,62 @@ header {
     /* add this line */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 1rem;
+    padding-top: 5rem;
     box-sizing: border-box;
   }
 
   .card__text {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-block-end: 0.5rem;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
   }
 
+  .card__canopy-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .card__canopy-title {
+    font-family: Poppins, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 24px;
+    font-style: normal;
+
+  }
+
+  .card__canopy-text {
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+    color: #344563;
+    display: inline;
+  }
+  .card__canopy{
+    margin-bottom: 3rem;
+  }
   .card__description {
     font-size: 1.2rem;
     line-height: 1.3;
     margin-block-end: 1rem;
+    width: 50%;
+  }
+  
+  .card__canopy-list {
+    display: flex;
+    margin-right: 1rem;
+    padding: 0;
   }
 
-  .card__price {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: right;
-    /* add this line */
-    margin-block-end: 1rem;
+  .card__canopy-list li {
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+    color: #6B778C;
+    font-weight: 400;
   }
 
-  .card__btn {
-    align-self: flex-end;
-    /* add this line */
+  .btn {
+    margin-top: 5rem;
   }
 }
 
