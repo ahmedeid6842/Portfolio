@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
 
 * {
   margin: 0;
@@ -15,7 +15,6 @@ html {
 a {
   text-decoration: none;
 }
-
 
 a:visited {
   color: #6070ff;
@@ -63,7 +62,6 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-
   .nav-menu {
     display: none;
   }
@@ -151,7 +149,6 @@ header {
     margin-right: 2rem;
     margin-left: 2rem;
     margin-top: 7rem;
-
   }
 
   .portfolio__description {
@@ -165,10 +162,7 @@ header {
     padding-left: 15rem;
     padding-top: 10rem;
   }
-
-
 }
-
 
 .btn {
   font-size: 1.7rem;
@@ -309,7 +303,7 @@ header {
   height: 76px;
 }
 
-.card__list>li {
+.card__list > li {
   font-size: 1.2rem;
   font-weight: 600;
   color: #396df2;
@@ -352,7 +346,6 @@ header {
     height: 100%;
     object-fit: cover;
     padding-block: 2%;
-
   }
 
   .card__details {
@@ -382,7 +375,6 @@ header {
     font-weight: 500;
     line-height: 24px;
     font-style: normal;
-
   }
 
   .card__canopy-text {
@@ -412,7 +404,7 @@ header {
   .card__canopy-list li {
     font-family: Poppins, sans-serif;
     font-size: 1.8rem;
-    color: #6B778C;
+    color: #6b778c;
     font-weight: 400;
   }
 
@@ -677,15 +669,12 @@ header {
 .contact__btn:active {
   background-color: #396df2;
   color: #fff;
-
 }
 
 .contact__btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   cursor: pointer;
 }
-
-
 
 .contact__name input::placeholder,
 .contact__email input::placeholder,
@@ -712,10 +701,8 @@ header {
   color: #b3bac5;
 }
 
-
 @media screen and (min-width: 768px) {
-
-  .contact{
+  .contact {
     background-image: url('../images/desktop/contact_shapes.svg'), url('../images/desktop/contact_background.svg');
     background-position: center top;
     background-size: 90%, cover;
@@ -726,7 +713,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top:2vh;
+    padding-top: 2vh;
     padding-bottom: 10vh;
     width: 90%;
     box-sizing: border-box;
@@ -758,5 +745,4 @@ header {
     width: 447px;
     height: 170px;
   }
-  
 }
