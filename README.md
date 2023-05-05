@@ -62,6 +62,7 @@
 - **adding my recent works cards**
 - **adding my languages, frameworks and skills**
 - **adding a beautiful Contact Me form**
+- **resposive design for both mobile and desktop**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

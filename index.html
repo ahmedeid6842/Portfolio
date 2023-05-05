@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <script src="https://kit.fontawesome.com/a4cfdaca39.js" crossorigin="anonymous"></script>
     <title>My Portfolio</title>
 </head>
@@ -16,46 +16,62 @@
         <a href="#" class="logo"> Welcome </a>
 
         <nav>
-            <div>
+
+            <ul class="nav-list">
+                <a href="#portfolio">
+                    <li>Portfolio</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+            <div class="nav-menu">
                 <img src="./images/menu.svg" alt="menu-icon" class="menu">
             </div>
         </nav>
 
     </header>
 
-    <section class="portfolio">
-        <h1 class="portfolio__title">I’m Ahmed Eid. Glad to see you!</h1>
-
-        <p class="portfolio__description">
-            I'm graduated from the Faculty of Computer and Informatics at Suez Canal University, where I majored
-            in Computer Science. My primary area of interest is web development, with a particular focus on the Backend
-            track.
-        </p>
-        <h2 class="contact__title">LET'S CONNECT</h2>
-        <ul class="portfolio__icons">
-            <li>
-                <a href="https://twitter.com/ahmedeid2684" rel="noopener noreferrer" target="_blank">
-                    <img src="images/twitter.svg" alt="twitter-logo">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/ahmed-eid-0018571b1/" rel="noopener noreferrer" target="_blank">
-                    <img src="images/linkedin.svg" alt="linkedin-logo">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/ahmedeid6842" rel="noopener noreferrer" target="_blank">
-                    <img src="images/github.svg" alt="github-logo">
-                </a>
-            </li>
-        </ul>
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio_paragraph">
+            <h1 class="portfolio__title">I’m Ahmed Eid.<br /> Glad to see you!</h1>
+            <p class="portfolio__description">
+                I'm graduated from the Faculty of Computer and Informatics at Suez Canal University, where I majored
+                in Computer Science. My primary area of interest is web development, with a particular focus on the
+                Backend
+                track.
+            </p>
+            <h2 class="contact__title">LET'S CONNECT</h2>
+            <ul class="portfolio__icons">
+                <li>
+                    <a href="https://twitter.com/ahmedeid2684" rel="noopener noreferrer" target="_blank">
+                        <img src="images/twitter.svg" alt="twitter-logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ahmed-eid-0018571b1/" rel="noopener noreferrer"
+                        target="_blank">
+                        <img src="images/linkedin.svg" alt="linkedin-logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ahmedeid6842" rel="noopener noreferrer" target="_blank">
+                        <img src="images/github.svg" alt="github-logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
-    <section class="work">
+    <section class="work" id="about">
         <ul class="card__container">
             <li class="card">
 
                 <div class="card__imgbox">
-                    <img src="./images/project_screenshots/Snapshoot Portfolio.png" alt="Lock-app" class="card__img">
+                    <img src="./images/project_screenshots/Snapshoot Portfolio.svg" alt="Lock-app" class="card__img">
                 </div>
 
                 <div class="card__details">
@@ -78,13 +94,13 @@
                         <li>Redis</li>
                     </ul>
 
-                    <a href="https://github.com/ahmedeid6842/auth_session-token_" class="btn btn--green">See Project</a>
+                    <a href="https://github.com/ahmedeid6842/auth_session-token_" class="btn btn--green car__btn">See
+                        Project</a>
                 </div>
             </li>
             <li class="card">
-
                 <div class="card__imgbox">
-                    <img src="./images/project_screenshots/Snapshoot Portfolio (1).png" alt="Affable-app"
+                    <img src="./images/project_screenshots/Snapshoot Portfolio (1).svg" alt="Affable-app"
                         class="card__img">
                 </div>
 
@@ -107,13 +123,13 @@
                         <li>Docker</li>
                     </ul>
 
-                    <a href="https://github.com/ahmedeid6842/Blog" class="btn btn--green">See Project</a>
+                    <a href="https://github.com/ahmedeid6842/Blog" class="btn btn--green car__btn">See Project</a>
                 </div>
             </li>
             <li class="card">
 
                 <div class="card__imgbox">
-                    <img src="./images/project_screenshots/Snapshoot Portfolio (2).png" alt="Vending-app"
+                    <img src="./images/project_screenshots/Snapshoot Portfolio (2).svg" alt="Vending-app"
                         class="card__img">
                 </div>
 
@@ -136,57 +152,62 @@
                         <li>Redis</li>
                         <li>Docker</li>
                     </ul>
-                    <a href="mailto:ahmedeid2684@gmail.com" class="btn btn--green">See Project</a>
+                    <a href="mailto:ahmedeid2684@gmail.com" class="btn btn--green car__btn">See Project</a>
                 </div>
             </li>
         </ul>
     </section>
     <section class="about">
-        <h2 class="about__title">About <br />
-            Myself</h2>
-        <p class="about_description">
-            I can help you build a product, feature, or website. Check out my portfolio and experience. If you like what
-            you see and have a project you need coded, contact me without hesitation.
-        </p>
-        <h2 class="about_contact__title">LET'S CONNECT</h2>
-        <ul class="about_portfolio__icons">
-            <li>
-                <a href="https://twitter.com/ahmedeid2684" rel="noopener noreferrer" target="_blank">
-                    <img src="images/twitter.svg" alt="twitter-logo">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/ahmed-eid-0018571b1/" rel="noopener noreferrer" target="_blank">
-                    <img src="images/linkedin.svg" alt="linkedin-logo">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/ahmedeid6842" rel="noopener noreferrer" target="_blank">
-                    <img src="images/github.svg" alt="github-logo">
-                </a>
-            </li>
-        </ul>
-        <div class="about__btn">
-            <a href="https://drive.google.com/file/d/1b3KKgW82D9qDyDKbZ8u8TfOwGGFjV8Y1/view?usp=sharing"
-                class="btn ">get me resume</a>
+        <div class="about_basics">
+            <h2 class="about__title">About Myself</h2>
+            <p class="about_description">
+                Hello I’m a software developer! I can help you build a product , feature or website Look through some of
+                my work and experience! If you like what you see and have a project you need coded, don’t hesitate to
+                contact me.
+            </p>
+            <h2 class="about_contact__title">LET'S CONNECT</h2>
+            <ul class="about_portfolio__icons">
+                <li>
+                    <a href="https://twitter.com/ahmedeid2684" rel="noopener noreferrer" target="_blank">
+                        <img src="images/twitter.svg" alt="twitter-logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ahmed-eid-0018571b1/" rel="noopener noreferrer"
+                        target="_blank">
+                        <img src="images/linkedin.svg" alt="linkedin-logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ahmedeid6842" rel="noopener noreferrer" target="_blank">
+                        <img src="images/github.svg" alt="github-logo">
+                    </a>
+                </li>
+            </ul>
+            <div class="about__btn">
+                <a href="https://drive.google.com/file/d/1b3KKgW82D9qDyDKbZ8u8TfOwGGFjV8Y1/view?usp=sharing"
+                    class="btn ">Get me resume</a>
+            </div>
         </div>
         <ul class="drop__down">
             <li class="language__list">
                 <span>Languages</span>
                 <i class='fas fa-angle-down'></i>
             </li>
-            <li class="language_list_technologies">
-                <img src="./images/JavaScript.svg" alt="">
-                <span>JavaScript</span>
-            </li>
-            <li class="language_list_technologies">
-                <img src="./images/HTML.svg" alt="">
-                <span>HTML</span>
-            </li>
-            <li class="language_list_technologies">
-                <img src="./images/CSS.svg" alt="">
-                <span>CSS</span>
-            </li>
+            <div class="language_technologies">
+                <li class="language_list_technologies">
+                    <img src="./images/JavaScript.svg" alt="">
+                    <span>JavaScript</span>
+                </li>
+                <li class="language_list_technologies">
+                    <img src="./images/HTML.svg" alt="">
+                    <span>HTML</span>
+                </li>
+                <li class="language_list_technologies">
+                    <img src="./images/CSS.svg" alt="">
+                    <span>CSS</span>
+                </li>
+            </div>
             <li class="framework__list">
                 <span>Frameworks</span>
                 <i class='fas fa-angle-right'></i>
@@ -197,7 +218,7 @@
             </li>
         </ul>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div>
             <h1 class="contact__form__title">Contact me</h1>
             <p class="contact__form__desc">
@@ -207,11 +228,11 @@
         </div>
         <form class="contact__form" action="https://formspree.io/f/mjvdloao" method="post">
             <div class="contact__name">
-                <input type="text" id="name" name="name" maxlength="30" placeholder="Enter your name..." required>
+                <input type="text" id="name" name="name" maxlength="30" placeholder="Enter you name..." required>
             </div>
 
             <div class="contact__email">
-                <input type="email" id="email" name="email" placeholder="Enter your gmail..." required>
+                <input type="email" id="email" name="email" placeholder="Enter you email..." required>
             </div>
 
             <div class="contact__message">
