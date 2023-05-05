@@ -63,6 +63,7 @@
 - **adding my languages, frameworks and skills**
 - **adding a beautiful Contact Me form**
 - **resposive design for both mobile and desktop**
+- **added animations to the work section**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
