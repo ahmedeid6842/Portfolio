@@ -542,8 +542,8 @@ header {
 .language__list span,
 .skill__list span,
 .framework__list span,
-.language_technologies{
-padding-left: 10px;
+.language_technologies {
+  padding-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -572,9 +572,10 @@ padding-left: 10px;
     justify-content: flex-start;
     margin-bottom: 20px;
   }
+
   .language__list span,
   .skill__list span,
-  .framework__list span{
+  .framework__list span {
     padding-left: 15px;
   }
 
@@ -586,7 +587,7 @@ padding-left: 10px;
     gap: 2rem;
     width: 414px;
     height: 144px;
-    padding: 0px;
+    padding: 0;
   }
 
   .language_list_technologies {
