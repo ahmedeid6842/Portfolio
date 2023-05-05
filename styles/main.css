@@ -522,7 +522,7 @@ header {
   width: 327px;
   height: 24px;
   line-height: 24px;
-  color: #000;
+  color: #344563;
 }
 
 .fas {
@@ -537,6 +537,13 @@ header {
   padding-top: 5vw;
   padding-bottom: 10vw;
   margin: 0;
+}
+
+.language__list span,
+.skill__list span,
+.framework__list span,
+.language_technologies{
+padding-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -565,6 +572,11 @@ header {
     justify-content: flex-start;
     margin-bottom: 20px;
   }
+  .language__list span,
+  .skill__list span,
+  .framework__list span{
+    padding-left: 15px;
+  }
 
   .language_technologies {
     display: flex;
@@ -574,6 +586,7 @@ header {
     gap: 2rem;
     width: 414px;
     height: 144px;
+    padding: 0px;
   }
 
   .language_list_technologies {
