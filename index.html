@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://kit.fontawesome.com/a4cfdaca39.js" crossorigin="anonymous"></script>
     <title>My Portfolio</title>
@@ -12,28 +14,25 @@
 
 <body>
 
-    <header>
-        <a href="#" class="logo"> Welcome </a>
-
-        <nav>
-
-            <ul class="nav-list">
-                <a href="#portfolio">
-                    <li>Portfolio</li>
-                </a>
-                <a href="#about">
-                    <li>About</li>
-                </a>
-                <a href="#contact">
-                    <li>Contact</li>
-                </a>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="#" class="navbar-brand">Welcome</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
-
-            <div class="nav-menu">
-                <img src="./images/menu.svg" alt="menu-icon" class="menu">
-            </div>
-        </nav>
-
+        </div>
     </header>
 
     <section class="portfolio" id="portfolio">
