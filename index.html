@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Main Css Link -->
-    <link rel="stylesheet" href="styles/main.css">
-
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://kit.fontawesome.com/a4cfdaca39.js" crossorigin="anonymous"></script>
     <title>My Portfolio</title>
 </head>
 
@@ -18,41 +16,232 @@
         <a href="#" class="logo"> Welcome </a>
 
         <nav>
-            <div>
+
+            <ul class="nav-list">
+                <a href="#portfolio">
+                    <li>Portfolio</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+            <div class="nav-menu">
                 <img src="./images/menu.svg" alt="menu-icon" class="menu">
             </div>
         </nav>
 
     </header>
 
-    <section class="portfolio">
-        <h1 class="portfolio__title">I’m Ahmed Eid. Glad to see you!</h1>
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio_paragraph">
+            <h1 class="portfolio__title">I’m Ahmed Eid.<br /> Glad to see you!</h1>
+            <p class="portfolio__description">
+                I'm graduated from the Faculty of Computer and Informatics at Suez Canal University, where I majored
+                in Computer Science. My primary area of interest is web development, with a particular focus on the
+                Backend
+                track.
+            </p>
+            <h2 class="contact__title">LET'S CONNECT</h2>
+            <ul class="portfolio__icons">
+                <li>
+                    <a href="https://twitter.com/ahmedeid2684" rel="noopener noreferrer" target="_blank">
+                        <img src="images/twitter.svg" alt="twitter-logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ahmed-eid-0018571b1/" rel="noopener noreferrer"
+                        target="_blank">
+                        <img src="images/linkedin.svg" alt="linkedin-logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ahmedeid6842" rel="noopener noreferrer" target="_blank">
+                        <img src="images/github.svg" alt="github-logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="work" id="about">
+        <ul class="card__container">
+            <li class="card">
 
-        <p class="portfolio__description">
-            I'm graduated from the Faculty of Computer and Informatics at Suez Canal University, where I majored
-            in Computer Science. My primary area of interest is web development, with a particular focus on the Backend
-            track.
-        </p>
-        <h2 class="contact__title">LET'S CONNECT</h2>
-        <ul class="portfolio__icons">
-            <li>
-                <a href="https://twitter.com/ahmedeid2684" rel="noopener noreferrer" target="_blank">
-                    <img src="images/twitter.svg" alt="twitter-logo">
-                </a>
+                <div class="card__imgbox">
+                    <img src="./images/project_screenshots/Snapshoot Portfolio.svg" alt="Lock-app" class="card__img">
+                </div>
+
+                <div class="card__details">
+                    <h3 class="card__text">Lock API</h3>
+                    <div class="card__canopy">
+                        <div class="card__canopy-header">
+                            <h4 class="card__canopy-title">CANOPY</h4>
+                            <ul class="card__canopy-list">
+                                <li>Backed Dev</li>
+                                <li>2023</li>
+                            </ul>
+                        </div>
+                        <p class="card__canopy-text">Lock uses REST APIs to protect endpoints by using two techniques:
+                            tokens and sessions.</p>
+                    </div>
+                    <ul class="card__list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>JWT</li>
+                        <li>Redis</li>
+                    </ul>
+
+                    <a href="https://github.com/ahmedeid6842/auth_session-token_" class="btn btn--green car__btn">See
+                        Project</a>
+                </div>
             </li>
-            <li>
-                <a href="https://www.linkedin.com/in/ahmed-eid-0018571b1/" rel="noopener noreferrer" target="_blank">
-                    <img src="images/linkedin.svg" alt="linkedin-logo">
-                </a>
+            <li class="card">
+                <div class="card__imgbox">
+                    <img src="./images/project_screenshots/Snapshoot Portfolio (1).svg" alt="Affable-app"
+                        class="card__img">
+                </div>
+
+                <div class="card__details">
+                    <h3 class="card__text">Affable REST APIs</h3>
+                    <div class="card__canopy">
+                        <div class="card__canopy-header">
+                            <h4 class="card__canopy-title">CANOPY</h4>
+                            <ul class="card__canopy-list">
+                                <li>Backed Dev</li>
+                                <li>2022</li>
+                            </ul>
+                        </div>
+                        <p class="card__canopy-text">Affable manages your Blog through REST API and you can also see
+                            others' Blogs .</p>
+                    </div>
+                    <ul class="card__list">
+                        <li>Node.js</li>
+                        <li>TypeScript</li>
+                        <li>Docker</li>
+                    </ul>
+
+                    <a href="https://github.com/ahmedeid6842/Blog" class="btn btn--green car__btn">See Project</a>
+                </div>
             </li>
-            <li>
-                <a href="https://github.com/ahmedeid6842" rel="noopener noreferrer" target="_blank">
-                    <img src="images/github.svg" alt="github-logo">
-                </a>
+            <li class="card">
+
+                <div class="card__imgbox">
+                    <img src="./images/project_screenshots/Snapshoot Portfolio (2).svg" alt="Vending-app"
+                        class="card__img">
+                </div>
+
+                <div class="card__details">
+                    <h3 class="card__text">Vending</h3>
+                    <div class="card__canopy">
+                        <div class="card__canopy-header">
+                            <h4 class="card__canopy-title">CANOPY</h4>
+                            <ul class="card__canopy-list">
+                                <li>Backed Dev</li>
+                                <li>2023</li>
+                            </ul>
+                        </div>
+                        <p class="card__canopy-text">endpoints for a vending machine that is
+                            accessible to buyers and sellers.(this project is private, get contact with me)</p>
+                    </div>
+                    <ul class="card__list">
+                        <li>Node.js</li>
+                        <li>JavaScript</li>
+                        <li>Redis</li>
+                        <li>Docker</li>
+                    </ul>
+                    <a href="mailto:ahmedeid2684@gmail.com" class="btn btn--green car__btn">See Project</a>
+                </div>
             </li>
         </ul>
     </section>
+    <section class="about">
+        <div class="about_basics">
+            <h2 class="about__title">About Myself</h2>
+            <p class="about_description">
+                Hello I’m a software developer! I can help you build a product , feature or website Look through some of
+                my work and experience! If you like what you see and have a project you need coded, don’t hesitate to
+                contact me.
+            </p>
+            <h2 class="about_contact__title">LET'S CONNECT</h2>
+            <ul class="about_portfolio__icons">
+                <li>
+                    <a href="https://twitter.com/ahmedeid2684" rel="noopener noreferrer" target="_blank">
+                        <img src="images/twitter.svg" alt="twitter-logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ahmed-eid-0018571b1/" rel="noopener noreferrer"
+                        target="_blank">
+                        <img src="images/linkedin.svg" alt="linkedin-logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ahmedeid6842" rel="noopener noreferrer" target="_blank">
+                        <img src="images/github.svg" alt="github-logo">
+                    </a>
+                </li>
+            </ul>
+            <div class="about__btn">
+                <a href="https://drive.google.com/file/d/1b3KKgW82D9qDyDKbZ8u8TfOwGGFjV8Y1/view?usp=sharing"
+                    class="btn ">Get me resume</a>
+            </div>
+        </div>
+        <ul class="drop__down">
+            <li class="language__list">
+                <span>Languages</span>
+                <i class='fas fa-angle-down'></i>
+            </li>
+            <div class="language_technologies">
+                <li class="language_list_technologies">
+                    <img src="./images/JavaScript.svg" alt="">
+                    <span>JavaScript</span>
+                </li>
+                <li class="language_list_technologies">
+                    <img src="./images/HTML.svg" alt="">
+                    <span>HTML</span>
+                </li>
+                <li class="language_list_technologies">
+                    <img src="./images/CSS.svg" alt="">
+                    <span>CSS</span>
+                </li>
+            </div>
+            <li class="framework__list">
+                <span>Frameworks</span>
+                <i class='fas fa-angle-right'></i>
+            </li>
+            <li class="skill__list">
+                <span>Skills</span>
+                <i class='fas fa-angle-right'></i>
+            </li>
+        </ul>
+    </section>
+    <section class="contact" id="contact">
+        <div>
+            <h1 class="contact__form__title">Contact me</h1>
+            <p class="contact__form__desc">
+                If you have an application you are interested in developing, a feature that you need built or a project
+                that needs coding. I’d love to help with it!
+            </p>
+        </div>
+        <form class="contact__form" action="https://formspree.io/f/mjvdloao" method="post">
+            <div class="contact__name">
+                <input type="text" id="name" name="name" maxlength="30" placeholder="Enter you name..." required>
+            </div>
 
+            <div class="contact__email">
+                <input type="email" id="email" name="email" placeholder="Enter you email..." required>
+            </div>
+
+            <div class="contact__message">
+                <textarea id="message" name="message" maxlength="500" placeholder="Write your message here..."
+                    required></textarea>
+            </div>
+            <button type="submit" class="contact__btn">Get in touch</button>
+        </form>
+    </section>
 </body>
 
 </html>

@@ -13,6 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -22,6 +23,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -58,10 +60,21 @@
 - **adding menu bar**
 - **adding links that refer to my profiles**
 - **adding background image from figma**
-
+- **adding my recent works cards**
+- **adding my languages, frameworks and skills**
+- **adding a beautiful Contact Me form**
+- **resposive design for both mobile and desktop**
+- **added animations to the work section**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://ahmedeid6842.github.io/Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
@@ -117,7 +130,7 @@ To run the project, execute the following command: open index.html as normal fil
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[make the website more interative]**
-- [ ] **[adding samples of my work]**
+- [x] **[adding samples of my work]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,6 +150,12 @@ Feel free to check the [issues page](../../issues/).
 If you like this project, please give it a star ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📖 Acknowledgements <a name="acknowledgements"></a>
+I would like to appreciate <a href="https://www.microverse.org/">Microverse</a> for providing the resources and the platform for us to be a Professional full-stack developer.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 📝 License <a name="license"></a>
 
