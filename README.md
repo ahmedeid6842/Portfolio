@@ -66,6 +66,7 @@
 - **resposive design for both mobile and desktop**
 - **added animations to the work section**
 - **added menu for mobile version**
+- **added popup window tothe work section**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
