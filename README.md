@@ -65,6 +65,7 @@
 - **adding a beautiful Contact Me form**
 - **resposive design for both mobile and desktop**
 - **added animations to the work section**
+- **added menu for mobile version**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
