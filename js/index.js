@@ -2,6 +2,7 @@ const hamburgerButton = document.querySelector('.nav-menu');
 const mainContent = document.querySelector('.main-content');
 const closeMenu = document.querySelector('.close-menu');
 const mobile = document.querySelector('.mobile-menu');
+const mobileMenuAnchors = document.querySelectorAll('.mobile-menu a');
 
 hamburgerButton.addEventListener('click', () => {
   hamburgerButton.classList.toggle('active');
@@ -9,8 +10,7 @@ hamburgerButton.addEventListener('click', () => {
   mobile.classList.toggle('active');
 });
 
-const mobile_menu_anchors = document.querySelectorAll('.mobile-menu a');
-mobile_menu_anchors.forEach((anchor) => {
+mobileMenuAnchors.forEach((anchor) => {
   anchor.addEventListener('click', () => {
     hamburgerButton.classList.remove('active');
     mainContent.classList.remove('inactive');
