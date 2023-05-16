@@ -98,13 +98,24 @@ header {
   height: 5%;
 }
 
+.design-guideline-line {
+  position: absolute;
+  bottom: 2rem;
+  left: 13rem;
+  width: 25%;
+  background-color: black;
+  color: black;
+  border-radius: 5px;
+  border-bottom: 3px solid black;
+}
+
 .nav-menu {
   cursor: pointer;
   justify-content: flex-start;
   padding-right: 2rem;
 }
 
-.nav-menu.active ~ .mobile-menu {
+.nav-menu.active~.mobile-menu {
   display: block;
   background-color: #6070ff;
   width: 100%;
@@ -131,7 +142,7 @@ header {
     visibility: visible;
   }
 
-  .nav-menu.active ~ .mobile-menu {
+  .nav-menu.active~.mobile-menu {
     display: flex;
     flex-direction: row;
     color: white;
@@ -390,7 +401,7 @@ header {
   height: 76px;
 }
 
-.card__list > li {
+.card__list>li {
   font-size: 1.2rem;
   font-weight: 600;
   color: #396df2;
