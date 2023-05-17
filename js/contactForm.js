@@ -14,8 +14,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-
-//Local Storage 
+// Local Storage
 const inputs = form.querySelectorAll('input, textarea');
 const storageKey = 'contactForm';
 
@@ -26,7 +25,7 @@ let formData = {
 };
 
 // Update formData object and save to localStorage on form input change
-inputs.forEach(input => {
+inputs.forEach((input) => {
   input.addEventListener('input', () => {
     formData[input.name] = input.value;
     localStorage.setItem(storageKey, JSON.stringify(formData));
@@ -38,7 +37,7 @@ const storedData = JSON.parse(localStorage.getItem(storageKey));
 
 if (storedData) {
   formData = storedData;
-  inputs.forEach(input => {
+  inputs.forEach((input) => {
     input.value = formData[input.name] || '';
   });
 }
