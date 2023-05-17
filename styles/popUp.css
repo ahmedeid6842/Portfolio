@@ -14,6 +14,7 @@
   align-items: flex-start;
   gap: 2rem;
   overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 .popup__img {
@@ -74,8 +75,9 @@
 
 .popup__buttons > a {
   display: flex;
-  width: 16rem;
+  width: 50%;
   height: 5rem;
+  font-size: 1.3rem;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -104,11 +106,15 @@
 
 @media screen and (min-width: 768px) {
   .popup {
-    width: 50%;
-    height: 95%;
+    width: 80%;
+    height: 90%;
     gap: 0;
     padding: 2.4rem;
-    overflow: visible;
+    overflow: scroll;
+  }
+
+  .popup__description{
+    width: 70%;
   }
 
   .popup__img {
@@ -129,6 +135,7 @@
     gap: 1rem;
   }
 
+
   .popup__buttons {
     position: relative;
     margin-left: 0;
@@ -136,6 +143,7 @@
     margin-top: 0;
     justify-content: flex-end;
     gap: 2rem;
+    width: 30rem;
   }
 
   .gray-line {
@@ -147,6 +155,8 @@
   .popup__buttons > a {
     margin-left: 0;
     margin-top: 0;
+    height: 4rem;
+    font-size: 1.4rem;
   }
 
   .popup__canopy {
