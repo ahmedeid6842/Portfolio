@@ -873,6 +873,12 @@ header {
   color: #b3bac5;
 }
 
+.error-message {
+  color: red;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .contact {
     background-image: url('../images/desktop/contact_shapes.svg'), url('../images/desktop/contact_background.svg');
