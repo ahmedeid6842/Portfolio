@@ -67,7 +67,7 @@
 - **added animations to the work section**
 - **added menu for mobile version**
 - **added popup window tothe work section**
-
+- **Added Email validation for the contact form**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
