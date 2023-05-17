@@ -1,0 +1,172 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 15px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.popup__img {
+  width: 100%;
+}
+
+.popup__left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.popup__exit {
+  position: absolute;
+  right: 3rem;
+  top: 2.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.popup__name {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #172b4d;
+}
+
+.popup__canopy > * {
+  margin-top: 0;
+}
+
+.popup__canopy-list {
+  margin: 0;
+}
+
+.popup__tech {
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-left: 3px;
+  margin-top: 1.2rem;
+}
+
+.popup__description {
+  font-size: 1.6rem;
+  color: #344563;
+  line-height: 2.4rem;
+  margin-left: 0.4rem;
+  width: 100%;
+}
+
+.popup__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 4.9rem;
+}
+
+.popup__buttons > a {
+  display: flex;
+  width: 50%;
+  height: 5rem;
+  font-size: 1.3rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.popup__buttons img {
+  position: relative;
+  padding-inline: 0.5rem;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #ebecf0;
+  z-index: 5;
+  opacity: 0.8;
+  filter: blur(10px);
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-open {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .popup {
+    width: 80%;
+    height: 90%;
+    gap: 0;
+    padding: 2.4rem;
+    overflow: scroll;
+  }
+
+  .popup__description {
+    width: 70%;
+  }
+
+  .popup__img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .popup__exit {
+    background-color: #ebecf0;
+    top: 2rem;
+  }
+
+  .popup__details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 5rem;
+    gap: 1rem;
+  }
+
+  .popup__buttons {
+    position: relative;
+    margin-left: 0;
+    bottom: 0;
+    margin-top: 0;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 30rem;
+  }
+
+  .gray-line {
+    border-top: 2px solid #ebecf0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .popup__buttons > a {
+    margin-left: 0;
+    margin-top: 0;
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+
+  .popup__canopy {
+    margin-bottom: 3rem;
+  }
+
+  .popup__tech {
+    margin-top: 0;
+  }
+
+  .modal__tech > li {
+    margin-bottom: 0.5rem;
+  }
+}
