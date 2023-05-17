@@ -39,7 +39,6 @@ function openPopup(index) {
   const technologiesList = projects[index].technologies.map((tech) => `<li>${tech}</li>`).join('');
   const canopyList = projects[index].canopy.map((elem) => `<li>${elem}</li>`).join('');
 
-
   const popupHtml = `
         <div class="popup">
 

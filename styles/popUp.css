@@ -113,7 +113,7 @@
     overflow: scroll;
   }
 
-  .popup__description{
+  .popup__description {
     width: 70%;
   }
 
@@ -134,7 +134,6 @@
     margin-top: 5rem;
     gap: 1rem;
   }
-
 
   .popup__buttons {
     position: relative;
