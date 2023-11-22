@@ -421,6 +421,12 @@ header {
   /* add a smooth transition effect */
 }
 
+.card__btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .card__container {
     display: flex;

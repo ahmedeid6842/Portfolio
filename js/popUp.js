@@ -122,7 +122,7 @@ const projects = [
 function openPopup(index) {
   const section = document.querySelector('.work');
   const overlay = document.querySelector('.overlay');
-  const technologiesList = projects[index].technologies.map((tech) => `<li>${tech}</li>`).join('');
+  const technologiesList = projects[index].technologies.map((tech) => `<li  class="popup-tech-item">${tech}</li>`).join('');
   const canopyList = projects[index].canopy.map((elem) => `<li>${elem}</li>`).join('');
 
   const popupHtml = `
@@ -183,7 +183,7 @@ function createCard() {
   const cardContainer = document.querySelector('.card__container');
   for (let index = projects.length - 1; index >= 0; index -= 1) {
     const project = projects[index];
-    const technologiesList = project.technologies.map((tech) => `<li>${tech}</li>`).join('');
+    const technologiesList = project.technologies.map((tech) => `<li class="popup-tech-item">${tech}</li>`).join('');
 
     const card = `
             <li class="card">
@@ -209,8 +209,7 @@ function createCard() {
                          ${technologiesList}
                     </ul>
                     <button
-                        class="btn btn--green car__btn">See
-                        Project</button>
+                        class="btn btn--green card__btn">See Project</button>
                 </div>
     </li>
         `;

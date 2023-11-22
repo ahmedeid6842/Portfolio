@@ -42,6 +42,10 @@
   color: #172b4d;
 }
 
+.popup-tech-item{
+  margin-bottom: 2rem;
+}
+
 .popup__canopy > * {
   margin-top: 0;
 }
