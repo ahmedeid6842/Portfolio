@@ -111,9 +111,9 @@
             <ul class="drop__down">
                 <li class="language__list">
                     <span>Languages</span>
-                    <i class='fas fa-angle-down'></i>
+                    <i class='fas fa-angle-down' id="languages-toggle"></i>
                 </li>
-                <div class="language_technologies">
+                <div class="language_technologies" id="languages-list">
                     <li class="language_list_technologies">
                         <img src="./images/JavaScript.svg" alt="">
                         <span>JavaScript</span>
@@ -127,14 +127,47 @@
                         <span>CSS</span>
                     </li>
                 </div>
+            
                 <li class="framework__list">
                     <span>Frameworks</span>
-                    <i class='fas fa-angle-right'></i>
+                    <i class='fas fa-angle-right' id="frameworks-toggle"></i>
                 </li>
+                <div class="frameworks_technologies hidden" id="frameworks-list">
+                    <li class="framework_list_technologies">
+                        <span>ExpressJS</span>
+                    </li>
+                    <li class="framework_list_technologies">
+                        <span>NestJS</span>
+                    </li>
+                    <li class="framework_list_technologies">
+                        <span>Rails</span>
+                    </li>
+                    <li class="framework_list_technologies">
+                        <span>React</span>
+                    </li>
+                </div>
+            
                 <li class="skill__list">
                     <span>Skills</span>
-                    <i class='fas fa-angle-right'></i>
+                    <i class='fas fa-angle-right' id="skills-toggle"></i>
                 </li>
+                <div class="skills_technologies hidden" id="skills-list">
+                    <li class="skill_list_technologies">
+                        <span>GraphQL</span>
+                    </li>
+                    <li class="skill_list_technologies">
+                        <span>MongoDB</span>
+                    </li>
+                    <li class="skill_list_technologies">
+                        <span>Postgres</span>
+                    </li>
+                    <li class="skill_list_technologies">
+                        <span>Redis</span>
+                    </li>
+                    <li class="skill_list_technologies">
+                        <span>Kubernetes</span>
+                    </li>
+                </div>
             </ul>
         </section>
         <section class="contact" id="contact">
