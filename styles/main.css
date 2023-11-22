@@ -115,7 +115,7 @@ header {
   padding-right: 2rem;
 }
 
-.nav-menu.active ~ .mobile-menu {
+.nav-menu.active~.mobile-menu {
   display: block;
   background-color: #6070ff;
   width: 100%;
@@ -142,7 +142,7 @@ header {
     visibility: visible;
   }
 
-  .nav-menu.active ~ .mobile-menu {
+  .nav-menu.active~.mobile-menu {
     display: flex;
     flex-direction: row;
     color: white;
@@ -401,7 +401,7 @@ header {
   height: 76px;
 }
 
-.card__list > li {
+.card__list>li {
   font-size: 1.2rem;
   font-weight: 600;
   color: #396df2;
@@ -606,7 +606,9 @@ header {
   padding: 1rem;
 }
 
-.language_list_technologies {
+.language_list_technologies,
+.framework_list_technologies,
+.skill_list_technologies {
   display: flex;
   border-radius: 8px;
   border: 1px solid #f7f7f9;
@@ -654,7 +656,9 @@ header {
 .language__list span,
 .skill__list span,
 .framework__list span,
-.language_technologies {
+.language_technologies,
+.frameworks_technologies,
+.skills_technologies  {
   padding-left: 10px;
 }
 
@@ -691,7 +695,9 @@ header {
     padding-left: 15px;
   }
 
-  .language_technologies {
+  .language_technologies,
+  .frameworks_technologies,
+  .skills_technologies {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -702,7 +708,9 @@ header {
     padding: 0;
   }
 
-  .language_list_technologies {
+  .language_list_technologies,
+  .framework_list_technologies,
+  .skill_list_technologies {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
