@@ -34,9 +34,9 @@ const projects = [
   {
     name: 'Search Engine',
     description:
-      "⚙️ 📈 Search Engine Rails project. That utilizes the Rails MVC pattern to build a robust search engine and analytics.",
+      '⚙️ 📈 Search Engine Rails project. That utilizes the Rails MVC pattern to build a robust search engine and analytics.',
     image: './images/project_images/search-engine.png',
-    technologies: ['Ruby on Rails', 'Sidekiq', 'Redis Server','Postgresql', 'Heroku'],
+    technologies: ['Ruby on Rails', 'Sidekiq', 'Redis Server', 'Postgresql', 'Heroku'],
     liveLink: 'https://search-engine-v2-enhancments-6bd414cc751d.herokuapp.com/',
     sourceLink: 'https://github.com/ahmedeid6842/search-engine',
     projectCover: 'https://github.com/ahmedeid6842/search-engine/assets/57197702/5a594296-7162-4b13-b3c1-834768615a8a',
@@ -69,9 +69,9 @@ const projects = [
   {
     name: 'Tickets',
     description:
-      "🎟️ 🎛️ The Ticket App Microservices Backend is an efficient Node.js and Typescript-based solution that uses microservices, NATS streaming, and Kubernetes deployment for ticketing apps.",
+      '🎟️ 🎛️ The Ticket App Microservices Backend is an efficient Node.js and Typescript-based solution that uses microservices, NATS streaming, and Kubernetes deployment for ticketing apps.',
     image: 'https://github.com/ahmedeid6842/Code-Base/assets/57197702/9d3c0317-6115-42bb-bb39-0733573e36d1',
-    technologies: ['Typescript', 'Node.js', 'Docker','Kubernetes', 'Microservices', 'NATS Streaming', 'MongoDB', 'Redis','Ojbect Oriented Programming'],
+    technologies: ['Typescript', 'Node.js', 'Docker', 'Kubernetes', 'Microservices', 'NATS Streaming', 'MongoDB', 'Redis', 'Ojbect Oriented Programming'],
     liveLink: 'https://documenter.getpostman.com/view/10444163/2s946feY8x',
     sourceLink: 'https://github.com/ahmedeid6842/Tickets',
     projectCover: 'https://github.com/ahmedeid6842/Code-Base/assets/57197702/8898f229-8118-4c1c-8a0b-89a84c60f949',
@@ -95,9 +95,9 @@ const projects = [
   {
     name: 'Vending',
     description:
-      "🥤🧃🍫 This Node.js and Express API provides CRUD and authentication for a vending machine.",
+      '🥤🧃🍫 This Node.js and Express API provides CRUD and authentication for a vending machine.',
     image: 'https://github.com/ahmedeid6842/Vending/assets/57197702/6657f219-b02b-48cf-88d1-1ba37c4a8a32',
-    technologies: ['Javascript', 'Node.js', 'ExpressJS','Json Web Token', 'MongoDB', 'Redis', 'Docker', 'Docker Compose','Swagger'],
+    technologies: ['Javascript', 'Node.js', 'ExpressJS', 'Json Web Token', 'MongoDB', 'Redis', 'Docker', 'Docker Compose', 'Swagger'],
     liveLink: 'https://app.swaggerhub.com/apis/ahmedeid6842/Vending/1.0.0',
     sourceLink: 'https://github.com/ahmedeid6842/Vending',
     projectCover: 'https://github.com/ahmedeid6842/Vending/assets/57197702/6f16e931-986a-411c-bf58-f8aee14d36fd',
@@ -115,9 +115,9 @@ const projects = [
   {
     name: 'Lock',
     description:
-      `🔒🛡️ Lock uses REST APIs to protect endpoints with tokens and sessions. Each technique is self-contained, with the option to use either one. Includes address book feature.🚪🔑 .`,
+      '🔒🛡️ Lock uses REST APIs to protect endpoints with tokens and sessions. Each technique is self-contained, with the option to use either one. Includes address book feature.🚪🔑 .',
     image: 'https://user-images.githubusercontent.com/57197702/218692185-0666ea88-3261-411c-9715-7c4bb959be61.gif',
-    technologies: ['Javascript', 'Node.js', 'ExpressJS','Json Web Token', 'MongoDB', 'Redis'],
+    technologies: ['Javascript', 'Node.js', 'ExpressJS', 'Json Web Token', 'MongoDB', 'Redis'],
     liveLink: 'https://github.com/ahmedeid6842/auth_session-token_',
     sourceLink: 'https://github.com/ahmedeid6842/auth_session-token_',
     projectCover: 'https://user-images.githubusercontent.com/57197702/218442989-cf6e2ba1-afde-4a15-a52e-da22d76021f3.JPG',

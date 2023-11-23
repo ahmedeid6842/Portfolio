@@ -115,7 +115,7 @@ header {
   padding-right: 2rem;
 }
 
-.nav-menu.active~.mobile-menu {
+.nav-menu.active ~ .mobile-menu {
   display: block;
   background-color: #6070ff;
   width: 100%;
@@ -142,7 +142,7 @@ header {
     visibility: visible;
   }
 
-  .nav-menu.active~.mobile-menu {
+  .nav-menu.active ~ .mobile-menu {
     display: flex;
     flex-direction: row;
     color: white;
@@ -402,7 +402,7 @@ header {
   height: 76px;
 }
 
-.card__list>li {
+.card__list > li {
   font-size: 1.2rem;
   font-weight: 600;
   color: #396df2;
@@ -608,7 +608,7 @@ header {
   padding: 1rem;
   background-color: #f7f7f9;
   border-radius: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .drop__down li {
@@ -680,7 +680,7 @@ header {
 .framework__list span,
 .language_technologies,
 .frameworks_technologies,
-.skills_technologies  {
+.skills_technologies {
   padding-left: 10px;
 }
 
@@ -689,20 +689,19 @@ header {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-
     padding: 9rem;
   }
 
   .about_basics {
     display: flex;
     flex-direction: column;
-    padding: 0rem;
+    padding: 0;
     justify-content: flex-start;
     width: 50%;
   }
 
   .about__title {
-    margin-top:0rem;
+    margin-top: 0;
     width: 100;
   }
 
@@ -755,7 +754,7 @@ header {
   }
 
   .drop__down {
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 66px;
     width: 684px;
     text-align: right;
@@ -774,7 +773,7 @@ header {
   .language__list,
   .framework__list,
   .skill__list {
-    padding: 0rem;
+    padding: 0;
     padding-left: 0;
     align-items: center;
     width: auto;

@@ -32,11 +32,11 @@ languageToggle.addEventListener('click', () => {
   languagesList.classList.toggle('hidden');
 
   if (languagesList.classList.contains('hidden')) {
-      languageToggle.classList.remove('fa-angle-down');
-      languageToggle.classList.add('fa-angle-right');
+    languageToggle.classList.remove('fa-angle-down');
+    languageToggle.classList.add('fa-angle-right');
   } else {
-      languageToggle.classList.remove('fa-angle-right');
-      languageToggle.classList.add('fa-angle-down');
+    languageToggle.classList.remove('fa-angle-right');
+    languageToggle.classList.add('fa-angle-down');
   }
 });
 
@@ -46,11 +46,11 @@ frameworksToggle.addEventListener('click', () => {
   frameworksList.classList.toggle('hidden');
 
   if (frameworksList.classList.contains('hidden')) {
-      frameworksToggle.classList.remove('fa-angle-down');
-      frameworksToggle.classList.add('fa-angle-right');
+    frameworksToggle.classList.remove('fa-angle-down');
+    frameworksToggle.classList.add('fa-angle-right');
   } else {
-      frameworksToggle.classList.remove('fa-angle-right');
-      frameworksToggle.classList.add('fa-angle-down');
+    frameworksToggle.classList.remove('fa-angle-right');
+    frameworksToggle.classList.add('fa-angle-down');
   }
 });
 
@@ -60,10 +60,10 @@ skillsToggle.addEventListener('click', () => {
   skillsList.classList.toggle('hidden');
 
   if (skillsList.classList.contains('hidden')) {
-      skillsToggle.classList.remove('fa-angle-down');
-      skillsToggle.classList.add('fa-angle-right');
+    skillsToggle.classList.remove('fa-angle-down');
+    skillsToggle.classList.add('fa-angle-right');
   } else {
-      skillsToggle.classList.remove('fa-angle-right');
-      skillsToggle.classList.add('fa-angle-down');
+    skillsToggle.classList.remove('fa-angle-right');
+    skillsToggle.classList.add('fa-angle-down');
   }
 });
