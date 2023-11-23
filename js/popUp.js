@@ -55,11 +55,13 @@ const projects = [
       <br/>
       <br/>
       Presentation Video Part-1
+      <br/>
       <iframe width="560" height="315" src="https://www.loom.com/embed/362bc4e4fe3e4d3c909b9cdfb9bd6f06?sid=1bac1c2f-7e0d-4454-8b85-7c9272038824" frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <br/>
       <br/>
       Presentation Video Part-2
+      <br/>
       <iframe width="560" height="315" src="https://www.loom.com/embed/89332f06eea1472ab0dbf9a4b00b8ab9?sid=56f90576-686f-4852-933a-185f12d3ef08" frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -195,10 +197,10 @@ function createCard() {
   for (let index = projects.length - 1; index >= 0; index -= 1) {
     const project = projects[index];
     const technologiesList = project.technologies.map((tech) => `<li class="popup-tech-item">${tech}</li>`).join('');
+    const animationClass = index % 2 === 0 ? 'fade-in-left' : 'fade-in-right';
 
     const card = `
-            <li class="card">
-
+            <li class="card ${animationClass}">
                 <div class="card__imgbox">
                     <img src="${project.projectCover}" alt="Lock-app"
                      class="card__img">
@@ -226,6 +228,18 @@ function createCard() {
         `;
     cardContainer.insertAdjacentHTML('afterbegin', card);
   }
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  document.querySelectorAll('.card').forEach((card) => {
+    observer.observe(card);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
