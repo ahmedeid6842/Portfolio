@@ -598,6 +598,7 @@ header {
 }
 
 /* Adding Drop down Section */
+
 .drop__down {
   display: flex;
   flex-direction: column;
@@ -611,11 +612,19 @@ header {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.language__list span,
+.skill__list span,
+.framework__list span,
+.language_technologies,
+.frameworks_technologies,
+.skills_technologies {
+  padding-left: 10px;
+}
+
 .drop__down li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  display: flex;
   cursor: pointer;
 }
 
@@ -675,15 +684,6 @@ header {
   margin: 0;
 }
 
-.language__list span,
-.skill__list span,
-.framework__list span,
-.language_technologies,
-.frameworks_technologies,
-.skills_technologies {
-  padding-left: 10px;
-}
-
 @media screen and (min-width: 768px) {
   .about {
     flex-direction: row;
@@ -712,6 +712,10 @@ header {
   .language__list,
   .skill__list,
   .framework__list {
+    padding: 0;
+    padding-left: 0;
+    align-items: center;
+    width: auto;
     justify-content: flex-start;
     margin-bottom: 20px;
   }
@@ -768,15 +772,6 @@ header {
   .skill__list .fas,
   .framework__list .fas {
     margin-left: 402px;
-  }
-
-  .language__list,
-  .framework__list,
-  .skill__list {
-    padding: 0;
-    padding-left: 0;
-    align-items: center;
-    width: auto;
   }
 
   .skill__list .fas {
