@@ -200,6 +200,19 @@ header {
   flex-direction: column;
   align-items: left;
   text-align: left;
+  animation: slideInUp 1s ease-in-out;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .portfolio__title {
@@ -207,6 +220,27 @@ header {
   font-weight: bold;
   padding: 1rem;
   margin-top: 8rem;
+  animation: bounceText 1.5s infinite;
+}
+
+@keyframes bounceText {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    animation-timing-function: ease-out;
+  }
+
+  60% {
+    transform: translateY(-10px);
+    animation-timing-function: ease-in;
+  }
 }
 
 .portfolio__description {
@@ -223,6 +257,20 @@ header {
   list-style: none;
   margin-top: 1rem;
   padding: 1rem;
+}
+
+.portfolio__icons img {
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+.portfolio__icons img:hover {
+  animation: spin 0.8s ease-in-out;
+  transform: scale(1.1);
 }
 
 .contact__title {
@@ -246,6 +294,7 @@ header {
     margin-right: 2rem;
     margin-left: 2rem;
     margin-top: 7rem;
+    height: fit-content;
   }
 
   .portfolio__description {
@@ -282,9 +331,6 @@ header {
 
 .btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-
-.btn:active {
   background-color: #396df2;
   color: #fff;
 }
@@ -296,18 +342,44 @@ header {
 }
 
 .card__container {
-  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: 3rem;
-  justify-content: center;
+  justify-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .card {
   width: 33rem;
-  height: 50rem;
+  height: fit-content;
+  padding-bottom: 1rem;
   border: 1px solid #d0d9d4;
   border-radius: 0.8rem;
+  opacity: 0;  /* Initial opacity set to 0 */
+  transform: translateX(-20%);  /* Initial position set to slide in from left */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.card.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease-in-out;
 }
 
 .card__imgbox {
@@ -338,6 +410,15 @@ header {
   color: #172b4d;
   text-transform: capitalize;
   align-items: flex-start;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-start !important;
 }
 
 .card__list,
@@ -398,7 +479,6 @@ header {
   font-weight: 400;
   line-height: 24px;
   width: 295px;
-  height: 76px;
 }
 
 .card__list > li {
@@ -409,7 +489,7 @@ header {
   border-radius: 4px;
   padding: 0.8rem 1.2rem;
   float: left;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .card__imgbox:hover img {
@@ -419,6 +499,12 @@ header {
   transition: transform 0.3s ease-in-out;
 
   /* add a smooth transition effect */
+}
+
+.card__btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -590,17 +676,60 @@ header {
   padding-right: 4rem;
 }
 
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+.about_portfolio__icons img:hover {
+  animation: spin 0.8s ease-in-out;
+}
+
 /* Adding Drop down Section */
+
 .drop__down {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-top: 15px;
+  height: max-content;
   margin-left: 25px;
   padding: 1rem;
+  background-color: #f7f7f9;
+  border-radius: 16px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.language_list_technologies {
+.language__list span,
+.skill__list span,
+.framework__list span,
+.language_technologies,
+.frameworks_technologies,
+.skills_technologies {
+  padding-left: 10px;
+}
+
+.drop__down li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.drop__down li span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #253858;
+}
+
+.drop__down li i {
+  font-size: 24px;
+  color: #253858;
+}
+
+.language_list_technologies,
+.framework_list_technologies,
+.skill_list_technologies {
   display: flex;
   border-radius: 8px;
   border: 1px solid #f7f7f9;
@@ -638,18 +767,9 @@ header {
 }
 
 .skill__list {
-  border-top: 1px solid #dfe1e6;
-  border-bottom: 1px solid #dfe1e6;
   padding-top: 5vw;
   padding-bottom: 10vw;
   margin: 0;
-}
-
-.language__list span,
-.skill__list span,
-.framework__list span,
-.language_technologies {
-  padding-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -661,10 +781,15 @@ header {
   }
 
   .about_basics {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
     width: 50%;
   }
 
   .about__title {
+    margin-top: 0;
     width: 100;
   }
 
@@ -675,6 +800,10 @@ header {
   .language__list,
   .skill__list,
   .framework__list {
+    padding: 0;
+    padding-left: 0;
+    align-items: center;
+    width: auto;
     justify-content: flex-start;
     margin-bottom: 20px;
   }
@@ -685,18 +814,22 @@ header {
     padding-left: 15px;
   }
 
-  .language_technologies {
+  .language_technologies,
+  .frameworks_technologies,
+  .skills_technologies {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
-    width: 414px;
-    height: 144px;
+    width: fit-content;
+    height: fit-content;
     padding: 0;
   }
 
-  .language_list_technologies {
+  .language_list_technologies,
+  .framework_list_technologies,
+  .skill_list_technologies {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -713,7 +846,7 @@ header {
   }
 
   .drop__down {
-    margin-top: 30px;
+    margin-top: 0;
     padding-top: 66px;
     width: 684px;
     text-align: right;
@@ -723,15 +856,10 @@ header {
     margin-top: 3rem;
   }
 
-  .language__list .fas {
+  .language__list .fas,
+  .skill__list .fas,
+  .framework__list .fas {
     margin-left: 402px;
-  }
-
-  .skill__list {
-    padding: 4rem;
-    padding-left: 0;
-    align-items: center;
-    width: auto;
   }
 
   .skill__list .fas {
