@@ -246,6 +246,7 @@ header {
     margin-right: 2rem;
     margin-left: 2rem;
     margin-top: 7rem;
+    height: fit-content;
   }
 
   .portfolio__description {
@@ -686,16 +687,22 @@ header {
 @media screen and (min-width: 768px) {
   .about {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
+
     padding: 9rem;
   }
 
   .about_basics {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    justify-content: flex-start;
     width: 50%;
   }
 
   .about__title {
+    margin-top:0rem;
     width: 100;
   }
 
@@ -748,7 +755,7 @@ header {
   }
 
   .drop__down {
-    margin-top: 30px;
+    margin-top: 0px;
     padding-top: 66px;
     width: 684px;
     text-align: right;
@@ -758,10 +765,14 @@ header {
     margin-top: 3rem;
   }
 
-  .language__list .fas {
-    margin-left: 400px;
+  .language__list .fas,
+  .skill__list .fas,
+  .framework__list .fas {
+    margin-left: 402px;
   }
 
+  .language__list,
+  .framework__list,
   .skill__list {
     padding: 0rem;
     padding-left: 0;
