@@ -602,8 +602,31 @@ header {
   flex-direction: column;
   gap: 2rem;
   margin-top: 15px;
+  height: max-content;
   margin-left: 25px;
   padding: 1rem;
+  background-color: #f7f7f9;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.drop__down li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  cursor: pointer;
+}
+
+.drop__down li span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #253858;
+}
+
+.drop__down li i {
+  font-size: 24px;
+  color: #253858;
 }
 
 .language_list_technologies,
@@ -646,8 +669,6 @@ header {
 }
 
 .skill__list {
-  border-top: 1px solid #dfe1e6;
-  border-bottom: 1px solid #dfe1e6;
   padding-top: 5vw;
   padding-bottom: 10vw;
   margin: 0;
@@ -703,8 +724,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
-    width: 414px;
-    height: 144px;
+    width: fit-content;
+    height: fit-content;
     padding: 0;
   }
 
@@ -738,11 +759,11 @@ header {
   }
 
   .language__list .fas {
-    margin-left: 402px;
+    margin-left: 400px;
   }
 
   .skill__list {
-    padding: 4rem;
+    padding: 0rem;
     padding-left: 0;
     align-items: center;
     width: auto;
