@@ -52,6 +52,17 @@ const projects = [
       the user wait until the analytics are updated, which means the application can receive many search requests
       and handle them efficiently and quickly. By supporting an authentication system,
       the search analytics can be updated only for the current logged-in user.
+      <br/>
+      <br/>
+      Presentation Video Part-1
+      <iframe width="560" height="315" src="https://www.loom.com/embed/362bc4e4fe3e4d3c909b9cdfb9bd6f06?sid=1bac1c2f-7e0d-4454-8b85-7c9272038824" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br/>
+      <br/>
+      Presentation Video Part-2
+      <iframe width="560" height="315" src="https://www.loom.com/embed/89332f06eea1472ab0dbf9a4b00b8ab9?sid=56f90576-686f-4852-933a-185f12d3ef08" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         `,
     canopy: ['FullStack', 2023],
   },
