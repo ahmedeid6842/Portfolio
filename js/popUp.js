@@ -6,7 +6,7 @@ const projects = [
       '❓🗣️ Robust Q&A application built with NestJS. Empowering users with knowledge, seamless communication, and comprehensive features.',
     image: './images/project_images/how.svg',
     technologies: ['TypeScript', 'Node.js', 'NestJS', 'Postgres', 'Redis', 'TypeORM', 'NodeMailer'],
-    liveLink: 'https://github.com/ahmedeid6842/How/blob/development/README.md',
+    liveLink: 'https://how-fcb5f9de2993.herokuapp.com/',
     sourceLink: 'https://github.com/ahmedeid6842/How',
     projectCover: './images/project_covers/how-high-resolution-logo-color-on-transparent-background.png',
     fullDescription: `
