@@ -120,7 +120,7 @@ const projects = [
       '🔒🛡️ Lock uses REST APIs to protect endpoints with tokens and sessions. Each technique is self-contained, with the option to use either one. Includes address book feature.🚪🔑 .',
     image: 'https://user-images.githubusercontent.com/57197702/218692185-0666ea88-3261-411c-9715-7c4bb959be61.gif',
     technologies: ['Javascript', 'Node.js', 'ExpressJS', 'Json Web Token', 'MongoDB', 'Redis'],
-    liveLink: 'https://github.com/ahmedeid6842/auth_session-token_',
+    liveLink: 'https://documenter.getpostman.com/view/10444163/2s9YeK3pnU',
     sourceLink: 'https://github.com/ahmedeid6842/auth_session-token_',
     projectCover: 'https://user-images.githubusercontent.com/57197702/218442989-cf6e2ba1-afde-4a15-a52e-da22d76021f3.JPG',
     fullDescription: `
